@@ -1,0 +1,299 @@
+/* standart class */
+
+body{
+  background-color: #171a1f;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.standard-title{
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+
+.btn-read-more{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1c69d4;
+  border: 1px solid #1c69d4;
+  width: 168px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-read-more:hover{
+  border: 1px solid #1c69d4;
+  background-color: #787878;
+ box-shadow: 5px 5px 2px 1px #1c69d4; 
+}
+
+/* standard class end */
+
+/* header */
+
+header{
+  padding: 30px 0;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  background-image: url('../img/bmw-i8-bgc.png');
+  background-size: cover;
+  height: 100vh; 
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+   font-family: 'Inter', sans-serif;
+   font-weight: 600;
+   font-size: 28px;
+}
+
+header form{
+  display: flex;
+}
+
+header form .form-control{
+  width: 280px;
+  height: 34px;
+  padding: 6px 20px;
+  border-radius: 0;
+}
+
+header form .btn{
+  height: 34px;
+  padding: 6px 20px;
+  border-radius: 0;
+  line-height: 0;
+  position: relative;
+  background-color: #000;
+  border-color: #000;
+  font-size: 18px;   
+}
+
+header form .btn i{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+header form .form-control:focus{
+  color: #0b3a56;
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 0;
+}
+
+header form .btn-primary:focus{
+  background-color: rgba(0, 0, 0, 0.0);
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.0)
+}
+
+header form .btn-primary:hover{
+  background-color: #6a6a6a;
+  border-color: #6a6a6a;
+}
+
+header form .line{
+  height: 34px;
+  width: 1px;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+header form .social-icon{
+  display: flex;
+  height: 34px;
+  align-self: center;
+  font-weight: 400;
+}
+
+header form .social-icon i + i{
+  margin-left: 15px;
+}
+
+header form .social-icon i:hover{
+  color: #1c69d4;
+}
+
+header form .menu{
+  display: flex;
+  align-self: center;
+  height: 34px;
+  position: relative;
+  padding: 0 10px;
+}
+
+header form .menu:hover{
+  color: #1c69d4;
+}
+
+header form .dropdown-hover{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+header form .menu:hover .dropdown-hover{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  left: 30px;
+  width: 170px;
+  padding: 0 5px;
+  justify-content: start;
+}
+
+header form .dropdown-hover span{
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  margin-top: 13px;
+  margin-bottom: 2px;
+}
+
+header form .dropdown-hover span:hover{
+  color: #1c69d4;
+}
+
+header form .dropdown-hover .menu-logo{
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+header form .dropdown-hover .menu-logo:hover{
+  color: #fff;
+}
+
+header form .dropdown-hover .drop-down-item-i{
+  text-align: center;
+}
+
+/* header end */
+
+/* main */
+
+main{
+  padding-top: 105px; 
+  position: relative;
+}
+
+main h2{
+  font-weight: 600;
+  font-size: 56px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 25px;
+  position: absolute;
+}
+
+main .card-news{
+  height: 600px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+main .card-news img{
+  width: 100%;
+  height: 100%;
+}
+
+main .card-news .information-text{
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  /* width: 479px; */
+} 
+
+main .card-news .information-text .note{
+  letter-spacing: 3px;
+}
+/* main end */
+
+/* footer */
+
+footer .carousel-inner{
+  height: 470px;
+}
+
+footer .carousel-inner .carousel-item{
+  position: relative;
+}
+
+footer .carousel-inner .carousel-item a{
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+
+footer .carousel-inner .carousel-item .quote{
+  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 22px;
+}
+
+footer .carousel-inner .carousel-item a:hover{
+  color: #1c69d4;
+}
+
+footer .carousel-inner .carousel-item .quote{
+  display: inline-block;
+  margin-bottom: 19px;
+}
+
+footer .carousel-inner .carousel-item .footer-card .social-icon i + i{
+  margin-left: 15px;
+}
+
+footer .carousel-inner .carousel-item .footer-card .social-icon i:hover{
+  color: #1c69d4;
+}
+
+footer .carousel-inner .carousel-item img{
+  width: 100%;
+  height: 470px;
+}
+
+footer .carousel-control-prev,footer .carousel-control-next{
+  width: auto;
+  padding: 0 3px;
+}
+
+footer .carousel-inner .carousel-item .footer-card{
+  position: absolute;
+  top: 235px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/* footer end */
